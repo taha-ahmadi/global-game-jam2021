@@ -229,8 +229,6 @@ html,body{
 
 .esfehan{
     background-image: url("../assets/pic/esfehan.jpg");
-  border-radius: 20px;
-
 }
 
 .tehran{
@@ -255,7 +253,7 @@ background-image: url("../assets/pic/mazandaran.jpg");
   position: absolute; 
   bottom: 0;
   right: 0;
-  border-radius: 0 0 20px 20px;
+  border-radius: 0 0 30px 30px;
   background-image: linear-gradient(rgba(0,0,0,0), #000000);
   color: #f1f1f1; 
   width: 100%;
