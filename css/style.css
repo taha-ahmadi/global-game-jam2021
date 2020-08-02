@@ -63,32 +63,45 @@ html,body{
     font-size: 1.2em;
 }
 @media (min-width:601px)  { 
-    #nav-ggj{
+    #navbarSupportedContent{
         background-color: #888;
         text-align: center;
     }
 
 }
-#time-counter{
-    width: 40%;border-radius: 23px;position: absolute;bottom: 0;left: 0;right: 0;
-}
-.header-main-text{
-    text-shadow: 10px 10px rgba(86, 54, 103);
-    font-family: "cinema";
-    font-size: 10em;
-}
+@media  (min-width: 1200px) {
+    #time-counter{
+        width: 40%;border-radius: 23px;position: absolute;bottom: 0;left: 0;right: 0;
+        padding: 2em 1em;
+    }
+    .header-main-text{
+        text-shadow: 10px 10px rgba(86, 54, 103);
+        font-family: "cinema";
+        font-size: 10em;
+    }
+    
+  }
+  @media only screen and (max-width: 1199px) {
+    #time-counter{
+        width: 60%;border-radius: 23px;position: relative;bottom: 0;left: 0;right: 0;
+        z-index: 99;
+    }
+    .header-main-text{
+        text-shadow: 10px 10px rgba(86, 54, 103);
+        font-family: "cinema";
+        font-size: 3em;
+    }
+    #main-info{
+        margin-top: 200px;
+    }
+  }
+
 @media (min-width:801px)  { 
     #main-img{
         border-left: 3px dashed rgb(86, 54, 103);
         border-right: 3px dashed rgb(86, 54, 103);
     }
-    #time-counter{
-        width: 40%;border-radius: 23px;position: relative;bottom: 0;left: 0;right: 0;
-        z-index: 99;
-    }
-    #main-info{
-        margin-top: 250px;
-    }
+    
 }
 
 .btn-ggj{
