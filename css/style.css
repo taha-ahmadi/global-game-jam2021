@@ -62,13 +62,7 @@ html,body{
 .navbar-collapse{
     font-size: 1.2em;
 }
-@media (min-width:601px)  { 
-    #navbarSupportedContent{
-        background-color: #888;
-        text-align: center;
-    }
 
-}
 @media  (min-width: 1200px) {
     #time-counter{
         width: 40%;border-radius: 23px;position: absolute;bottom: 0;left: 0;right: 0;
@@ -230,11 +224,13 @@ html,body{
   height: 170px;
   background-position: center;
   background-size: cover;
-  border-radius: 10px;
+  border-radius: 20px;
 }
 
 .esfehan{
     background-image: url("../assets/pic/esfehan.jpg");
+  border-radius: 20px;
+
 }
 
 .tehran{
@@ -259,7 +255,7 @@ background-image: url("../assets/pic/mazandaran.jpg");
   position: absolute; 
   bottom: 0;
   right: 0;
-  border-radius: 0 0 10px 10px;
+  border-radius: 0 0 20px 20px;
   background-image: linear-gradient(rgba(0,0,0,0), #000000);
   color: #f1f1f1; 
   width: 100%;
