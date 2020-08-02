@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="fa-IR" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global Game Jam - 2021</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+    <header class="container-fluid header ggj-header-bg  text-white p-0">
+        <div class="overlay">
+
+            <!-- navbar -->
+            <nav class="navbar navbar-expand-lg navbar-light ggj-navbar">
+                <a class="navbar-brand" href="#">
+                    <img src="assets/logo/GGJ_Logo.svg" alt="Global game jam logo" width="150" loading="lazy">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="nav-ggj navbarSupportedContent">
+                    <ul class="navbar-nav m-auto px-5 text-white d-flex justify-content-around" style="width: 75%;">
+                        <li class="nav-item active">
+                            <a class="nav-link text-white" href="#">سوالات پرکاربرد</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#">وبلاگ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#">شهرها</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#">بازی‌های‌ساخته‌شده</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#">درباره‌ما</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#">همکاری‌با‌ما</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#">اسپانسرشیپ</a>
+                        </li>
+                    </ul>
+                    <form class="form-inline my-2 my-lg-0 d-flex flex-nowrap">
+                        <div class="input-group">
+                            <input class="form-control mr-sm-2 ggj-search" type="search"
+                            style="width: 150px;"
+                                placeholder="جستجوکنید..." aria-label="جستجوکنید..." aria-describedby="basic-addon1">
+                        </div>
+                        <div class="input-group-prepend">
+                            <img class="input-group-text" id="basic-addon1"
+                                src="assets/icon/Iconly-Broken-Search.svg" alt="" srcset="">
+                        </div>
+                        <span class="input-group-append">
+                            <button class="btn ggj-register my-2 my-sm-0 mx-1 mr-2 rounded-pill" type="submit">ثبت
+                                نام
+                            </button>
+                        </span>
+                    </form>
+                </div>
+            </nav>
+
+            <!-- header -->
+            <div class="d-flex text-center h-75 align-items-center justify-content-center">
+                <div class="content  ">
+                    <div class="">
+                        <h1 class="display-3 header-main-text" style="font-weight:bolder">گلوبال گیم جم ۲۰۲۱</h1>
+                    </div>
+                    <div class=" my-5" style="font-size:20px">
+                        <span class="mx-5 d-block d-md-inline-block" style="white-space: nowrap;">
+                            <img class="text-white mx-2" width="25px" src="assets/icon/Calendar.svg" alt="" srcset=""> ۱۸
+                            اسفند
+                            ۹۹</span>
+                        <span class="mx-5"><img class="text-white mx-2" width="35px"
+                                src="assets/icon/Iconly-Broken-Location.svg" alt="" srcset="">
+                            ایران,تهران</span>
+                    </div>
+                    <div class="  my-3">
+                        <a href="#" class="btn btn-ggj my-sm-0 mx-1 rounded-pill" id="event-submit" type="submit">ثبت نام برای
+                            رویداد</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Counter -->
+            <div class=" d-flex row py-5 px-5 m-auto text-center bg-white ggj-text flex-lg-nowrap" id="time-counter">
+                <div class="col-12 col-lg" style="white-space: nowrap;font-size: 35px;font-weight: bold;color:#230C30;">
+                    ۳ ماه
+                </div>
+                <div class="col-12 col-lg" style="white-space: nowrap;font-size: 35px;font-weight: bold;color:#FF8484;">
+                    ۱۲ روز
+                </div>
+                <div class="col-12 col-lg ml-4" style="white-space: nowrap;font-size: 35px;font-weight: bold;color:#9DCFCD;">
+                    ۶ ساعت
+                </div>
+                <div class="col-12 col-lg m-auto" style="font-size: 20px;font-weight: bold;white-space: nowrap;">
+                    مونده به رویداد
+                    <br>
+                    <img src="assets/icon/smile.svg" alt="" class="mr-4">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="container-fluid my-5 mt-5" style="width: 85%;">
+        <!-- information -->
+        <div class="row my-lg-5 py-3 px-1 text-right bg-white" id="main-info">
+            <div class="col-12 col-lg-7">
+                <img src="assets/pic/globalgame.jpg" alt="" class="w-100">
+            </div>
+            <div class="col-12 col-lg-5 p-3">
+                <h5 class="ggj-text">گلوبال گیم جم ۲۰۲۱</h5>
+                <p class="text-secondrery">
+                    رویداد گلوبال گیم جم, یکی از مهم‌ترین رویدادهای بازی‌سازی بین‌المللی است که در آن هزاران بازی‌ساز از
+                    سراسر دنیا فرصت دارند تا در مدت زمان دو روز, در مورد یک موضوع واحد بازی بسازند. در سه سال گذشته, ما
+                    تلاش کرده‌ایم بهترین فضا را در اختیار بازی‌سازان قرار دهیم تا دورهم جمع شوند و علاوه بر تجربه رقابت
+                    در این رویداد خلاقانه و پر هیجان جهاتی,ساعاتی را به دور از شلوغی و حواشی روزمره خود,در کنار
+                    سایر,فعالان حوزه بازی به خوشی و بازی‌سازی بگذرانند
+                </p>
+                <h5 class="ggj-text">اطلاعات کاربردی رویداد</h5>
+                <p>
+                    تاریخ رویداد: <a href="#" class="ggj-text ggj-a-main">۹ بهمن ۱۳۹۹</a> <br>
+                    محل برگزاری رویداد: <a href="#" class="ggj-text ggj-a-main">فضای کار اشتراکی زاویه</a> <br>
+                    ارتباط با ما: <a href="#" class="ggj-text ggj-a-main">ggj20@zavie.co</a> <br>
+                    هشتگ رسمی رویداد: <a href="#" class="ggj-text ggj-a-main">#zggj20</a> <br>
+                    شبکه های اجتماعی رویداد: <a href="#" class="ggj-text ggj-a-main">اینستاگرام</a>,<a href="#"
+                        class="ggj-text ggj-a-main">توییتر</a>, <a href="#" class="ggj-text ggj-a-main">تلگرام</a> <br>
+                    پخش زنده رویداد: <a href="#" class="ggj-text ggj-a-main">آپارات لایو</a> <br>
+                    تم رویداد: <a href="#" class="ggj-text ggj-a-main">دانلود فایل توضیحات</a> <br>
+                    اسپانسرهای رویداد: <a href="#" class="ggj-text ggj-a-main">اطلاعات بیشتر</a> <br>
+                </p>
+            </div>
+
+        </div>
+        <br>
+
+
+        <!-- partners -->
+        <div class=" row my-5 text-center p-md-0 py-4 px-4 bg-white justify-content-center align-items-center">
+            <div class="col-md-2 col-lg-2 col-12">
+                <img src="assets/logo/microsoft.jpg" class="w-100" alt="microsoft">
+            </div>
+            <div class="col-md-2 col-lg-2 col-12">
+                <img src="assets/logo/pay-ping.jpg" class="w-75" alt="pay ping">
+            </div>
+            <div class="col-md-2 col-lg-2 col-12">
+                <img src="assets/logo/evand.png" class="w-100" alt="evand">
+            </div>
+            <div class="col-md-2 col-lg-2 col-12">
+                <img src="assets/logo/ava-games.png" class="w-100" alt="ava games">
+            </div>
+            <div class="col-md-2 col-lg-2 col-12">
+                <img src="assets/logo/zavie.jpg" class="w-75" alt="zavie">
+            </div>
+            <div class="col-md-2 col-lg-2 col-12">
+                <img src="assets/logo/pay-ir.jpg" class="w-75" alt="pay.ir">
+            </div>
+        </div>
+
+
+        <!-- cities -->
+        <div class="city-container px-5 ">
+            <div class="row mt-3 text-right bg-white py-5 px-5 justify-content-around">
+                <div class="container mb-2 mb-mb-0 esfehan">
+                    <div class="overlay-img">اصفهان</div>
+                </div>
+
+
+                <div class="container mb-2 mb-mb-0 mazandaran">
+                    <div class="overlay-img">مازندران</div>
+                </div>
+                <div class="container mb-2 mb-mb-0 tehran">
+                    <img src="" alt="Avatar" class="image">
+                    <div class="overlay-img">تهران</div>
+                </div>
+                <div class="container mb-2 mb-mb-0 mashhad">
+                    <div class="overlay-img">مشهد</div>
+                </div>
+            </div>
+            <div class="arrow arrow-left"></div>
+            <div class="arrow arrow-right"></div>
+        </div>
+
+        <!-- blog -->
+        <div class="row mt-3 text-right bg-white pb-5 px-4 px-md-5">
+            <div class="col-12 text-center ggj-text py-5">
+                <h3>آخرین مطالب و خبر های گلوبال گیم جم</h3>
+            </div>
+            <div class="col-md-4 px-0 px-md-5 mb-4 mb-md-0">
+                <div class="img-con">
+                    <img src="assets/pic/blog-1.jpg" class="w-100" alt="" srcset="">
+                </div>
+                <h4 class="mb-3">نبردی برای بازی سازان</h4>
+                <p>
+                    رویداد گلوبال گیم جم, یکی از مهم‌ترین رویدادهای بازی‌سازی بین‌المللی است که در آن هزاران بازی‌ساز از
+                    سراسر دنیا فرصت دارند تا در مدت زمان دو روز, در مورد یک موضوع واحد بازی بسازند. در سه سال گذشته, ما
+                    تلاش کرده‌ایم بهترین فضا را در اختیار بازی‌سازان قرار دهیم تا دورهم جمع شوند و علاوه بر تجربه رقابت
+                    در این رویداد خلاقانه و پر هیجان جهاتی,ساعاتی را به دور از شلوغی و حواشی روزمره خود,در کنار
+                    سایر,فعالان حوزه بازی به خوشی و بازی‌سازی بگذرانند</p>
+                <div class="text-left m-auto">
+                    <button class="btn btn-ggj rounded-pill">مطالعه بیشتر</button>
+                </div>
+            </div>
+            <div class="col-md-4 px-0 px-md-5 mb-4 mb-md-0" id="main-img">
+                <div class="img-con">
+                    <img src="assets/pic/blog-2.jpg" class="w-100 rounded" alt="" srcset="">
+                </div>
+                <h4 class="mb-3">نبردی برای بازی سازان</h4>
+                <p>
+                    رویداد گلوبال گیم جم, یکی از مهم‌ترین رویدادهای بازی‌سازی بین‌المللی است که در آن هزاران بازی‌ساز از
+                    سراسر دنیا فرصت دارند تا در مدت زمان دو روز, در مورد یک موضوع واحد بازی بسازند. در سه سال گذشته, ما
+                    تلاش کرده‌ایم بهترین فضا را در اختیار بازی‌سازان قرار دهیم تا دورهم جمع شوند و علاوه بر تجربه رقابت
+                    در این رویداد خلاقانه و پر هیجان جهاتی,ساعاتی را به دور از شلوغی و حواشی روزمره خود,در کنار
+                    سایر,فعالان حوزه بازی به خوشی و بازی‌سازی بگذرانند</p>
+                <div class="text-left m-auto">
+                    <button class="btn btn-ggj rounded-pill">مطالعه بیشتر</button>
+                </div>
+
+            </div>
+            <div class="col-md-4 px-0 px-md-5 mb-4 mb-md-0">
+                <div class="img-con">
+
+                    <img src="assets/pic/blog-3.jpg" class="w-100" alt="" srcset="">
+                </div>
+                <h4 class="mb-3">نبردی برای بازی سازان</h4>
+                <p>
+                    رویداد گلوبال گیم جم, یکی از مهم‌ترین رویدادهای بازی‌سازی بین‌المللی است که در آن هزاران بازی‌ساز از
+                    سراسر دنیا فرصت دارند تا در مدت زمان دو روز, در مورد یک موضوع واحد بازی بسازند. در سه سال گذشته, ما
+                    تلاش کرده‌ایم بهترین فضا را در اختیار بازی‌سازان قرار دهیم تا دورهم جمع شوند و علاوه بر تجربه رقابت
+                    در این رویداد خلاقانه و پر هیجان جهاتی,ساعاتی را به دور از شلوغی و حواشی روزمره خود,در کنار
+                    سایر,فعالان حوزه بازی به خوشی و بازی‌سازی بگذرانند</p>
+                <div class="text-left m-auto">
+                    <button class="btn btn-ggj rounded-pill">مطالعه بیشتر</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- <img src="Main.png" alt=""> -->
+    <div class="footer-border-top"></div>
+    <footer class="container-fluid ggj-bg text-white pt-5 footer">
+        <div class="row  m-auto text-center text-right py-5" style="width: 90%;">
+            <div class="col-md-5 col-sm-12 d-flex">
+                <div class="col-md-4 col-sm-12  d-none d-md-inline-block">
+                    <img src="assets/logo/GGJ_Logo.svg" class="w-100" alt="">
+                </div>
+                <div class="col-md-8 col-sm-12" style="text-align: justify;">
+                    <p>رویداد گلوبال گیم جم, یکی از مهمترین رویداد های
+                        بازی‌سازی بین‌المللی است که در آن هزاران بازی‌ساز از سراسر دنیا فرصت دارند تا در مدت زمان دو
+                        زور, در مورد یک موضوع واحد بازی‌بسازند. در سه سال گذشته, تلاش کرده‌ایم بهترین فضا را در اختیار
+                        بازی‌سازان قرار دهیم تا دور هم جمع شوند.
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-2" style="direction: ltr;">
+                <h5 style="border-bottom: 2px solid white;display: inline-block;padding-bottom: 14px;">
+                    راه های ارتباطی</h5>
+                <span class="d-block"></span>
+
+                <a href="tel:+98 911 786 8034" class="text-white">0911 786 8034</a>
+                <br>
+                <a href="tel:+98 021 2343 7878" class="text-white">021 2343 7878</a>
+            </div>
+            <div class="col-2">
+                <h5 style="border-bottom: 2px solid white;display: inline-block;padding-bottom: 14px;">
+                    حمایت از رویداد</h5>
+            </div>
+            <div class="col-md-3">
+                <h5 style="border-bottom: 2px solid white;display: inline-block;padding-bottom: 14px;">
+                    عضویت در خبرنامه
+                </h5>
+                <p class="text-right mt-3" style="font-size: 14px;">با عضویت در خبرنامه از بروزترین اخبار ما مطلع باشید.
+                </p>
+                <form action="#" class="d-flex p-0 flex-nowrap text-right" method="post">
+                    <input type="text" class="btn btn-ggj input-text-newsletters py-3 px-3 ml-1" name=""
+                        placeholder="آدرس ایمیل‌تون">
+                    <input type="submit" class="btn btn-ggj py-3 px-3 btn-newsletter" value="عضویت">
+                </form>
+
+            </div>
+        </div>
+        <div class="col-12 mt-2 text-center py-2">تمامی حقوق وبسایت متعلق به تیم گلوبال گیم جم ایران می‌باشد.</div>
+
+    </footer>
+</body>
+
+</html>
