@@ -83,8 +83,9 @@ html,body{
   }
   @media only screen and (max-width: 1199px) {
     #time-counter{
-        width: 60%;border-radius: 23px;position: relative;bottom: 0;left: 0;right: 0;
+        width: 75%;border-radius: 23px;position: relative;bottom: 0;left: 0;right: 0;
         z-index: 99;
+        /* a */
     }
     .header-main-text{
         text-shadow: 10px 10px rgba(86, 54, 103);
@@ -92,7 +93,7 @@ html,body{
         font-size: 3em;
     }
     #main-info{
-        margin-top: 200px;
+        margin-top: 250px;
     }
   }
 
